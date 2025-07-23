@@ -1,5 +1,8 @@
 import numpy as np
 from scipy.integrate import quad
+import pandas as pd
+import pymc as pm
+from sklearn.linear_model import LinearRegression
 
 class PolynomialBasis:
   def __init__(self, lowerBound=0, upperBound=1, zero=1e-3):
